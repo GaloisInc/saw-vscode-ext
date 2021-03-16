@@ -3,21 +3,47 @@
 	"displayName": "saw",
 	"description": "A SAW (Software Analysis Workbench) plugin for VSCode",
 	"version": "0.0.1",
+	"publisher": "ajayeeralla",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
-		"onCommand:saw.helloWorld"
+		"onLanguage:saw",
+		"onCommand:saw.activate"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ajayeeralla/saw-vscode-ext.git"
+	},
 	"main": "./out/extension.js",
 	"contributes": {
+		"languages": [
+			{
+				"id": "saw",
+				"aliases": [
+					"saw",
+					"SAW"
+				],
+				"extensions": [
+					".saw"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "saw",
+				"scopeName": "source.saw",
+				"path": "./syntaxes/saw.tmLanguage."
+			}
+		],
 		"commands": [
 			{
-				"command": "saw.helloWorld",
-				"title": "Hello World"
+				"command": "saw.activate",
+				"title": "SAW: activate the syntax highlighting extension"
 			}
 		]
 	},

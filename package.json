@@ -37,13 +37,7 @@
 			{
 				"language": "saw",
 				"scopeName": "source.saw",
-				"path": "./syntaxes/saw.tmLanguage."
-			}
-		],
-		"commands": [
-			{
-				"command": "saw.activate",
-				"title": "SAW: activate the syntax highlighting extension"
+				"path": "./syntaxes/saw.tmLanguage.json"
 			}
 		]
 	},

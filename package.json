@@ -10,6 +10,7 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"icon": "galois_icon.png",
 	"activationEvents": [
 		"onLanguage:saw",
 		"onCommand:saw.activate"

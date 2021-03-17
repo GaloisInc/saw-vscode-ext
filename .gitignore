@@ -41,4 +41,4 @@ dist/**/*
 yarn.lock 
 
 #Ignore output directory
-out
+Out
